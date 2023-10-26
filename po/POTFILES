@@ -1,0 +1,6 @@
+data/org.gnome.hashdecrypt.desktop.in
+data/org.gnome.hashdecrypt.appdata.xml.in
+data/org.gnome.hashdecrypt.gschema.xml
+src/main.py
+src/window.py
+src/window.ui

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=hash-decrypt
+Exec=hash-decrypt
+Icon=org.gnome.hashdecrypt
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
