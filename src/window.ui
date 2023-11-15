@@ -19,12 +19,31 @@
           </object>
         </child>
         <child>
-          <object class="GtkLabel" id="label">
-            <property name="label">Hello, World!</property>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <property name="hexpand">true</property>
             <property name="vexpand">true</property>
-            <style>
-              <class name="title-1"/>
-            </style>
+            <child>
+              <object class="GtkLabel" id="label">
+                <property name="label">Hash Decrypt</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="label">Check if your hash is secure</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkEntry" id="text_entry">
+                <property name="placeholder-text">Enter your hash here...</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="submit_button">
+                <property name="label">Decrypt</property>
+                <signal name="clicked" handler="on_submit_clicked"/>
+              </object>
+            </child>
           </object>
         </child>
       </object>
