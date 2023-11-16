@@ -21,27 +21,36 @@
         <child>
           <object class="GtkBox">
             <property name="orientation">vertical</property>
-            <property name="hexpand">true</property>
-            <property name="vexpand">true</property>
+            <property name="halign">center</property>
+            <property name="spacing">16</property>
+            <property name="valign">center</property>
+            <property name="vexpand">True</property>
+            <property name="vexpand-set">True</property>
             <child>
-              <object class="GtkLabel" id="label">
+              <object class="GtkLabel">
                 <property name="label">Hash Decrypt</property>
+                <style>
+                  <class name="title-1"/>
+                </style>
               </object>
             </child>
             <child>
               <object class="GtkLabel">
-                <property name="label">Check if your hash is secure</property>
+                <property name="label">We detect the hash type and try to decrypt if it is vulnerable!</property>
               </object>
             </child>
             <child>
-              <object class="GtkEntry" id="text_entry">
+              <object class="GtkEntry">
                 <property name="placeholder-text">Enter your hash here...</property>
+                <property name="primary-icon-name">face-smile-big-symbolic</property>
               </object>
             </child>
             <child>
-              <object class="GtkButton" id="submit_button">
-                <property name="label">Decrypt</property>
-                <signal name="clicked" handler="on_submit_clicked"/>
+              <object class="GtkButton">
+                <property name="label">Verify</property>
+                <style>
+                  <class name="suggested-action"/>
+                </style>
               </object>
             </child>
           </object>
